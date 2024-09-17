@@ -1,0 +1,48 @@
+@import "./reset.css";
+@import "./header.css";
+@import "./hero.css";
+@import "./form.css";
+@import "./about.css";
+@import "./results.css";
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.woff2") format("woff2"),
+    url("../fonts/Roboto/Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Bold.woff2") format("woff2"),
+    url("../fonts/Roboto/Roboto-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --main-text-color: #483c08;
+  --navigation-color: #715d00;
+  --navigation-hover-color: #a88900;
+  --hero-heading-color: #f9e994;
+  --hero-text-color: #f6f7e4;
+  --background-advantages-color: #7fb3e1;
+  --advantages-text-color: #dfe4de;
+  --heading-card-color: #fff;
+  --background-card-color: #f6e791;
+  --background-card-text-color: rgba(161, 211, 55 0.4);
+  --button-color: #a1d337;
+  --shadow-color: rgba(0, 0, 0, 0.25);
+
+  --text-shadow: 0px 2px 2px var(--shadow-color);
+  --box-shadow: 0px 4px 4px var(--shadow-color);
+
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+
+  color: var(--main-text-color);
+  background-color: #fff;
+}

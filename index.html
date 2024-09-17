@@ -9,113 +9,118 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
-    <header>
-      <picture class="logo-img">
-        <source
-          srcset="
-            ./images/header/logo-1x.webp 1x,
-            ./images/header/logo-2x.webp 2x
-          "
-        />
-        <img src="./images/header/logo-1x.webp" alt="Logo" />
-      </picture>
-      <nav class="navigation">
-        <ul>
-          <li><a href="">ORDER</a></li>
-          <li><a href="">ABOUT</a></li>
-          <li><a href="">RESULTS</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="header-container">
+        <picture class="logo-img">
+          <source
+            srcset="
+              ./images/header/logo-1x.webp 1x,
+              ./images/header/logo-2x.webp 2x
+            "
+          />
+          <img src="./images/header/logo-1x.webp" alt="Logo" />
+        </picture>
+        <nav class="navigation">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="">ORDER</a></li>
+            <li><a class="nav-link" href="">ABOUT</a></li>
+            <li><a class="nav-link" href="">RESULTS</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
       <section class="hero-section">
-        <h1>Pet Naturals of Vermont, Calming, For Cats</h1>
-        <div>
-          <div>
-            <p>
-              Your cat deserves the best pet supplement the world has to offer.
-              That's what's in the package.
-            </p>
-            <ul>
-              <li>Features a patented calming blend</li>
-              <li>Doesn’t contain herbal ingredients</li>
-              <li>Helps manage everyday stress</li>
-            </ul>
-          </div>
+        <div class="overlay-container"></div>
+        <div class="hero-container">
+          <h1 class="hero-title">Pet Naturals of Vermont, Calming, For Cats</h1>
+          <div class="hero-content-container">
+            <div class="hero-text-container">
+              <p class="hero-text">
+                Your cat deserves the best pet supplement the world has to
+                offer. That's what's in the package.
+              </p>
 
-          <picture class="hero-img">
-            <source
-              srcset="
-                ./images/hero/cats-1x.webp 1x,
-                ./images/hero/cats-2x.webp 2x
-              "
-            />
-            <img
-              src="./images/hero/cats-1x.webp"
-              alt="Two cats with Pet Naturals "
-            />
-          </picture>
-
-          <div class="form-container">
-            <div>
-              <picture class="form-rectangle">
-                <source
-                  srcset="
-                    ./images/hero/form-rectangle-1x.webp 1x,
-                    ./images/hero/form-rectangle-2x.webp 2x
-                  "
-                />
-                <img
-                  src="./images/hero/form-rectangle-1x.webp"
-                  alt="Background form rectangle"
-                />
-              </picture>
-              <div>
-                <h3>TIME LEFT</h3>
-                <p>2:00:00</p>
-                <div>
-                  <p>120uah</p>
-                  <p>60uah</p>
-                </div>
-              </div>
+              <ul class="hero-advantages-list">
+                <li class="hero-advantages-item">
+                  Features a patented calming blend
+                </li>
+                <li class="hero-advantages-item">
+                  Doesn’t contain herbal ingredients
+                </li>
+                <li class="hero-advantages-item">
+                  Helps manage everyday stress
+                </li>
+              </ul>
             </div>
 
-            <form>
-              <label>
-                <picture class="placeholder-img">
-                  <source
-                    srcset="
-                      ./images/hero/paw-form-1x.webp  1x,
-                      ./images/hero/paw-form-2x.webpp 2x
-                    "
-                  />
-                  <img src="./images/hero/paw-form-1x.webp" alt="Cat's paw" />
-                </picture>
-                <input name="name" type="text" placeholder="Name" />
-              </label>
-              <label>
-                <picture class="placeholder-img">
-                  <source
-                    srcset="
-                      ./images/hero/paw-form-1x.webp  1x,
-                      ./images/hero/paw-form-2x.webpp 2x
-                    "
-                  />
-                  <img src="./images/hero/paw-form-1x.webp" alt="Cat's paw" />
-                </picture>
-                <input
-                  name="phone"
-                  type="tel"
-                  placeholder="+38(0__)___-__-__"
-                />
-              </label>
-              <button type="submit">ORDER</button>
-            </form>
+            <picture class="hero-img">
+              <source
+                srcset="
+                  ./images/hero/cats-1x.webp 1x,
+                  ./images/hero/cats-2x.webp 2x
+                "
+              />
+              <img
+                src="./images/hero/cats-1x.webp"
+                alt="Two cats with Pet Naturals "
+              />
+            </picture>
 
-            <p>Order date: 17.11.2021</p>
+            <div class="form-container">
+              <div>
+                <picture class="form-rectangle">
+                  <source
+                    srcset="
+                      ./images/hero/form-rectangle-1x.webp 1x,
+                      ./images/hero/form-rectangle-2x.webp 2x
+                    "
+                  />
+                  <img
+                    src="./images/hero/form-rectangle-1x.webp"
+                    alt="Background form rectangle"
+                  />
+                </picture>
+
+                <div class="sale-container">
+                  <h3 class="sale-title">TIME LEFT</h3>
+                  <p class="time-text">2:00:00</p>
+                  <div class="price-container">
+                    <div class="old-container">
+                      <p class="old-price">120uah</p>
+                    </div>
+                    <p class="new-price">60uah</p>
+                  </div>
+                </div>
+              </div>
+
+              <form class="hero-form">
+                <label class="label">
+                  <input
+                    class="input"
+                    name="name"
+                    type="text"
+                    placeholder="Name"
+                  />
+                </label>
+                <label class="label">
+                  <input
+                    class="input"
+                    name="phone"
+                    type="tel"
+                    placeholder="+38(0__)___-__-__"
+                  />
+                </label>
+                <button class="hero-form-btn" type="submit">ORDER</button>
+              </form>
+
+              <p class="order-date-text">Order date: 17.11.2021</p>
+            </div>
           </div>
         </div>
       </section>
@@ -185,7 +190,7 @@
         </ul>
       </section>
 
-      <section class="results-section">
+      <section class="results-section section">
         <h2>Best Uses for Calming Chews</h2>
         <div>
           <div>

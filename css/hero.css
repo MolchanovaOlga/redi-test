@@ -1,0 +1,123 @@
+.hero-section {
+  padding: 156px 0 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/hero/background-header-hero-1x.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: url("../images/hero/background-header-hero-2x.webp");
+  }
+}
+
+.overlay-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 844px;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 52px;
+  font-weight: 600;
+  color: var(--hero-heading-color);
+  width: 578px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.hero-content-container {
+  width: 1142px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  position: relative;
+}
+
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+  width: 439px;
+}
+
+.hero-text {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--hero-text-color);
+  text-shadow: var(--text-shadow);
+}
+
+.hero-advantages-list {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--advantages-text-color);
+  background-color: var(--background-advantages-color);
+  padding: 35px 0 38px 35px;
+  border-radius: 20px;
+  width: 323px;
+}
+
+.hero-advantages-item {
+  display: flex;
+  align-items: center;
+  padding-left: 35px;
+  position: relative;
+  width: 256px;
+}
+
+.hero-advantages-item:first-child {
+  margin-bottom: 20px;
+}
+
+.hero-advantages-item:last-child {
+  margin-top: 17px;
+}
+
+.hero-advantages-item::before {
+  content: "";
+  display: block;
+  background-image: url("../images/hero/paw-advantages-1x.webp");
+  width: 18px;
+  height: 24px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 17px;
+  position: absolute;
+  left: 0;
+}
+
+@media only screen and (min-resolution: 192dpi) {
+  .hero-advantages-item::before {
+    background-image: url("../images/hero/paw-advantages-2x.webp");
+  }
+}
+
+.hero-img {
+  position: absolute;
+  bottom: -9px;
+  left: 52%;
+  transform: translateX(-50%);
+  width: 710px;
+  height: 417px;
+  z-index: 10;
+}

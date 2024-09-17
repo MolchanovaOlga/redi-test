@@ -1,0 +1,150 @@
+.form-container {
+  width: 270px;
+  height: 462px;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  position: relative;
+  overflow: hidden;
+  padding: 23px 24px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* position: absolute;
+  z-index: 5;
+  right: 0;
+  bottom: 0; */
+  position: relative;
+  z-index: 5;
+  background-color: #fff;
+}
+
+.form-rectangle {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  left: -5px;
+  width: 105%;
+  height: 190px;
+}
+
+.sale-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 54px;
+}
+
+.sale-title {
+  font-size: 33px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.time-text {
+  color: var(--background-card-color);
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.old-container {
+  position: relative;
+}
+
+.old-price {
+  font-size: 30px;
+  font-weight: 600;
+  color: #6b6b6b;
+}
+
+.old-price::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 110px;
+  height: 2px;
+  background-color: #f6be91;
+
+  transform: rotate(162.55deg);
+  transform-origin: center;
+}
+
+.new-price {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.hero-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.label {
+  position: relative;
+}
+
+.label::before {
+  content: "";
+  display: block;
+  background-image: url("../images/hero/paw-form-1x.webp");
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 17px;
+  position: absolute;
+  left: 0;
+  top: 55%;
+  transform: translateY(-50%);
+}
+
+@media only screen and (min-resolution: 192dpi) {
+  .label::before {
+    background-image: url("../images/hero/paw-form-2x.webp");
+  }
+}
+
+.input {
+  padding: 16px 0 15px 55px;
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  color: #777777;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #f3efef;
+}
+
+.hero-form-btn {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--button-color);
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--heading-card-color);
+}
+
+.order-date-text {
+  margin-top: 30px;
+  text-shadow: var(--box-shadow);
+}
