@@ -46,3 +46,8 @@
   color: var(--main-text-color);
   background-color: #fff;
 }
+
+.section-heading {
+  font-size: 52px;
+  font-weight: 600;
+}

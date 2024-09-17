@@ -23,7 +23,7 @@
   top: 0;
   z-index: -1;
   left: -5px;
-  width: 105%;
+  width: 108%;
   height: 190px;
 }
 
@@ -142,6 +142,11 @@
   font-weight: 600;
   text-transform: uppercase;
   color: var(--heading-card-color);
+  transition: background-color 200ms linear;
+}
+
+.hero-form-btn:hover {
+  background-color: #88b32c;
 }
 
 .order-date-text {

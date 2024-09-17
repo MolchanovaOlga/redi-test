@@ -1,0 +1,98 @@
+.about-section {
+  padding: 48px 0 63px 0;
+  margin: 52px 0 38px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/about/background-img-about-1x.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-resolution: 192dpi) {
+  .about-section {
+    background-image: url("../images/about/background-img-about-2x.webp");
+  }
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-section-heading {
+  background-image: linear-gradient(
+    to bottom,
+    #f9e994 0%,
+    #537d13 56%,
+    #483c08 100%
+  );
+  margin-bottom: 60px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-item {
+  width: 305px;
+  height: 439px;
+  background-color: var(--background-card-color);
+  box-shadow: 2px 4px 5px var(--shadow-color);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 15px 15px 15px;
+}
+
+.about-item:hover {
+  box-shadow: 2px 4px 5px var(--shadow-color);
+}
+
+.about-item:first-child {
+  margin-right: 84px;
+  padding: 0px 15px 14px 15px;
+}
+
+.about-item:last-child {
+  margin-left: 85px;
+  padding: 14px 16px 15px 14px;
+}
+
+.about-text-container {
+  border-radius: 20px;
+  background-color: rgba(161, 211, 55, 0.4);
+  padding: 21px 16px 23px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 19px;
+  margin-top: 17px;
+  height: 218px;
+}
+
+.about-item:first-child .about-text-container {
+  padding: 21px 17px 26px 15px;
+  margin-top: 0;
+}
+
+.about-item:last-child .about-text-container {
+  padding: 21px 16px 23px 16px;
+  gap: 22px;
+  margin-top: 6px;
+}
+
+.about-text-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--heading-card-color);
+  text-shadow: var(--text-shadow);
+}
