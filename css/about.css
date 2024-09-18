@@ -1,13 +1,21 @@
 .about-section {
-  padding: 48px 0 63px 0;
-  margin: 52px 0 38px 0;
+  padding: 48px 0;
   display: flex;
   align-items: center;
   justify-content: center;
   background-image: url("../images/about/background-img-about-1x.webp");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
+}
+
+@media screen and (min-width: 1140px) {
+  .about-section {
+    padding: 48px 0 63px 0;
+    margin: 52px 0 38px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 @media only screen and (min-resolution: 192dpi) {
@@ -33,12 +41,23 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  text-align: center;
 }
 
 .about-list {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  gap: 24px;
+}
+
+@media screen and (min-width: 1140px) {
+  .about-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .about-item {
@@ -58,13 +77,25 @@
 }
 
 .about-item:first-child {
-  margin-right: 84px;
+  margin: 0;
   padding: 0px 15px 14px 15px;
 }
 
+@media screen and (min-width: 1140px) {
+  .about-item:first-child {
+    margin-right: 84px;
+  }
+}
+
 .about-item:last-child {
-  margin-left: 85px;
+  margin: 0;
   padding: 14px 16px 15px 14px;
+}
+
+@media screen and (min-width: 1140px) {
+  .about-item:last-child {
+    margin-left: 85px;
+  }
 }
 
 .about-text-container {

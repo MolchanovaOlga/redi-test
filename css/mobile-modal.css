@@ -90,4 +90,23 @@
 
 .modal-list-item {
   padding-bottom: 32px;
+  width: 300px;
+  height: 100px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/header/nav-background-1x.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-resolution: 192dpi) {
+  .modal {
+    background-image: url("../images/results/grass-2x.webpp");
+  }
+
+  .modal-list-item {
+    background-image: url("../images/header/nav-background-2x.webp");
+  }
 }
