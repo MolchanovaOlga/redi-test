@@ -6,5 +6,5 @@ export function currentDay() {
   let month = String(data.getMonth() + 1).padStart(2, "0");
   let day = String(data.getDate()).padStart(2, "0");
   let currentDay = `${day}.${month}.${year}`;
-  dataString.textContent = currentDay;
+  dataString.textContent = `Order date: ${currentDay}`;
 }
