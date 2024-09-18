@@ -9,12 +9,6 @@
   transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 768px) {
-  .backdrop {
-    display: none;
-  }
-}
-
 .is-open {
   transform: translateX(0);
   transition: transform 200ms linear;
@@ -108,5 +102,11 @@
 
   .modal-list-item {
     background-image: url("../images/header/nav-background-2x.webp");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .backdrop {
+    display: none;
   }
 }

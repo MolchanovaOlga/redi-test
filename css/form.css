@@ -15,12 +15,6 @@
   background-color: #fff;
 }
 
-@media screen and (min-width: 1140px) {
-  .form-container {
-    width: 270px;
-  }
-}
-
 .form-img-container {
   position: absolute;
   top: 0;
@@ -29,13 +23,6 @@
   width: 108%;
   height: 190px;
   object-fit: contain;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1139.98px) {
-  .form-img-container {
-    top: -8px;
-    left: -10px;
-  }
 }
 
 .form-rectangle-img {
@@ -69,18 +56,6 @@
   align-items: center;
   justify-content: center;
   gap: 24px;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1139.98px) {
-  .price-container {
-    gap: 90px;
-  }
-}
-
-@media screen and (min-width: 1140px) {
-  .price-container {
-    gap: 16px;
-  }
 }
 
 .old-container {
@@ -118,12 +93,6 @@
   gap: 15px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1139.98px) {
-  .hero-form {
-    width: 400px;
-  }
-}
-
 .label {
   position: relative;
   width: 100%;
@@ -143,12 +112,6 @@
   left: 0;
   top: 55%;
   transform: translateY(-50%);
-}
-
-@media only screen and (min-resolution: 192dpi) {
-  .label::before {
-    background-image: url("../images/hero/paw-form-2x.webp");
-  }
 }
 
 .input {
@@ -188,4 +151,35 @@
 .order-date-text {
   margin-top: 30px;
   text-shadow: var(--box-shadow);
+}
+
+@media only screen and (min-resolution: 192dpi) {
+  .label::before {
+    background-image: url("../images/hero/paw-form-2x.webp");
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1139.98px) {
+  .form-img-container {
+    top: -8px;
+    left: -10px;
+  }
+
+  .price-container {
+    gap: 90px;
+  }
+
+  .hero-form {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .form-container {
+    width: 270px;
+  }
+
+  .price-container {
+    gap: 16px;
+  }
 }
