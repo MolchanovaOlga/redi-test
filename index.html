@@ -24,6 +24,15 @@
           />
           <img src="./images/header/logo-1x.webp" alt="Logo" />
         </picture>
+        <button
+          class="burger-menu-btn js-open-menu"
+          type="button"
+          title="open mobile menu"
+        >
+          <svg class="burger-menu-icon" width="40" height="40">
+            <use href="./images/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
         <nav class="navigation">
           <ul class="nav-list">
             <li><a class="nav-link" href="#form">ORDER</a></li>
@@ -31,6 +40,34 @@
             <li><a class="nav-link" href="#results">RESULTS</a></li>
           </ul>
         </nav>
+      </div>
+
+      <div class="backdrop js-menu-container">
+        <div class="gradient-container"></div>
+        <div class="modal">
+          <button
+            class="modal-close-button js-close-menu"
+            type="button"
+            title="close mobile menu"
+          >
+            <svg class="modal-close-icon" width="32" height="32">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="modal-list">
+              <li class="modal-list-item">
+                <a href="#form" class="modal-link header-link-js">ORDER</a>
+              </li>
+              <li class="modal-list-item">
+                <a href="#about" class="modal-link header-link-js">ABOUT</a>
+              </li>
+              <li class="modal-list-item">
+                <a href="#results" class="modal-link header-link-js">RESULTS</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -235,6 +272,12 @@
       </section>
     </main>
 
+    <script
+      defer="defer"
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/main.js" type="module"></script>
   </body>
 </html>

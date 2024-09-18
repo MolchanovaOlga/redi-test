@@ -12,12 +12,6 @@
   );
 }
 
-@media only screen and (min-resolution: 192dpi) {
-  .about-section {
-    background-image: url("../images/results/grass-2x.webp");
-  }
-}
-
 .results-overlay-container {
   background-image: url("../images/results/grass-1x.webp");
   background-size: contain;
@@ -29,6 +23,12 @@
   z-index: 1;
   width: 100%;
   height: 844px;
+}
+
+@media only screen and (min-resolution: 192dpi) {
+  .results-overlay-container {
+    background-image: url("../images/results/grass-2x.webp");
+  }
 }
 
 .results-container {

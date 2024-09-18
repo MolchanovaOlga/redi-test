@@ -2,12 +2,6 @@ const timeText = document.querySelector(".time-text");
 
 const timeInMs = 2 * 60 * 60 * 1000;
 
-const startTimeObj = {
-  hours: 2,
-  minutes: 0,
-  seconds: 0,
-};
-console.log(startTimeObj.hours);
 convertMs(timeInMs);
 
 function drawTimer({ hours, minutes, seconds }) {
@@ -26,7 +20,6 @@ function convertMs(ms) {
   const minutes = Math.floor((ms % hour) / minute);
 
   const seconds = Math.floor(((ms % hour) % minute) / second);
-  console.log({ hours, minutes, seconds });
 
   return { hours, minutes, seconds };
 }
